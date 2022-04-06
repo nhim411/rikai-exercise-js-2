@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="bill">
+        <h1 class="bill__header">Calculates the monthly electric bill for customers</h1>
+        <div class="bill__input">
+          <div class="field">
+            <div class="feild__wrapper">
+              <div class="field__item">
+                <span class="field__label">Start-up period:</span>
+                <input type="text" id="input-start" class="field__input" />
+              </div>
+              <div class="field_message" id="start-message"></div>
+            </div>
+          </div>
+        </div>
+        <div class="bill__input">
+          <div class="field">
+            <div class="feild__wrapper">
+              <div class="field__item">
+                <span class="field__label">End-of-term digits:</span>
+                <input type="text" id="input-end" class="field__input" required />
+              </div>
+              <div class="field_message" id="end-message"></div>
+            </div>
+          </div>
+        </div>
+        <div class="bill__input">
+          <div class="field">
+            <span class="field__label">The VAT tax:</span>
+            <input type="text" class="field__input" value="10%" disabled />
+          </div>
+        </div>
+        <div class="bill__input">
+          <div class="field">
+            <span class="field__label">The number of letters</span>
+            <input type="text" class="field__input" id="input-letter" disabled />
+          </div>
+        </div>
+        <div class="bill__input">
+          <div class="field">
+            <span class="field__label">The total amount payable:</span>
+            <input type="text" class="field__input" id="input-total" disabled />
+          </div>
+        </div>
+        <div class="btn-group">
+          <button class="btn" id="btn-caculate">Caculate electricity bill</button>
+          <button class="btn" id="btn-clear">Clear</button>
+        </div>
+      </div>
+      <div id="table" class="table">
+        <table>
+          <tr>
+            <th>The retail price of living electricity</th>
+            <th>Unit</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Level 1: For kWh from 0 to 50</td>
+            <td>đ/kWh</td>
+            <td>1,480</td>
+          </tr>
+          <tr>
+            <td>Level 2: For kWh from 51 to 100</td>
+            <td>đ/kWh</td>
+            <td>1,500</td>
+          </tr>
+          <tr>
+            <td>Level 3: For kWh from 101 and above</td>
+            <td>đ/kWh</td>
+            <td>1,800</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

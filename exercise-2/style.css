@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.bill {
+  padding: 50px;
+  max-width: 900px;
+  width: 800px;
+  border: 2px solid rgb(29, 206, 56);
+  border-radius: 5px;
+}
+
+.bill__header {
+  margin-bottom: 50px;
+  text-align: center;
+  color: rgb(38, 12, 117);
+}
+.bill__input {
+}
+
+/* input field */
+.field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.field__label {
+  flex-basis: 200px;
+}
+.field__input {
+  flex: 1;
+  display: block;
+  border: 3px solid #ccc;
+  transition: all 1 ease-in-out;
+}
+
+.field__input:focus {
+  border-color: rgb(133, 150, 187);
+}
+
+.field__input:disabled {
+  background-color: rgb(219, 207, 207);
+}
+
+.feild__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.field__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.field_message {
+  color: red;
+  list-style: none;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  max-width: 250px;
+  flex: 1;
+  display: block;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.btn:hover {
+  background-color: rgb(42, 100, 187);
+  color: white;
+  border-radius: 5px;
+}
+
+.table {
+  margin-top: 50px;
+  max-width: 900px;
+  width: 800px;
+}
+
+.table table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  background-color: rgb(229, 222, 222);
+}
+
+tr td:first-child {
+  text-align: start;
+}
+
+tr {
+  height: 40px;
+}
